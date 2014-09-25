@@ -1,0 +1,28 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class practice extends Sprite
+	{
+		public function practice()
+		{
+			{
+				var count:int=0;
+				for (var i:int=0; i<fruitArray.length; i++) 
+				{
+					if(fruitArray[i].toLowerCase()==fruitName.toLowerCase()) 
+					{
+						count++;
+					}
+				}
+				return count;
+			}
+			
+			var fruit:Array = ["apples", "oranges", "grapes", "oranges", "apples", "grapes"];
+			var appleCount=getCount(fruit, "apples"); //returns 2
+			var grapeCount=getCount(fruit, "grapes"); //returns 2
+			var orangeCount=getCount(fruit, "oranges"); //returns 2
+
+		}
+	}
+}

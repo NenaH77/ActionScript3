@@ -1,0 +1,39 @@
+/*
+Name: Angelica Dinh
+Date: July 30, 2013
+Assignment: Fields with Events Part 1
+Class: FFM-1
+*/
+package
+{
+	import flash.display.Sprite;
+	import flash.text.TextField;
+	
+	public class Main extends Sprite
+	{
+		public function Main()
+		{
+			var btn:SubmitBtn = new SubmitBtn();
+			this.addChild(btn);
+			btn.x = 100;
+			btn.y = 300;
+			btn.scaleX = btn.scaleY = .8;
+			
+			//label for textfield
+			var nameLabel:TextField = new TextField();
+			this.addChild(nameLabel);
+			nameLabel.x = 50;
+			nameLabel.y = 50;
+			nameLabel.border = true;
+			nameLabel.text = "First Name:";
+			
+			nameLabel.height = 30;
+			nameLabel.width = 80;
+			
+			
+			
+			
+			
+		}
+	}
+}

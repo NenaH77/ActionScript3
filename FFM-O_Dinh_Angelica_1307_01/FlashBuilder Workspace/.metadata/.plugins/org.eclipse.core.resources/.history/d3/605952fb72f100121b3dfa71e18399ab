@@ -1,0 +1,46 @@
+/*
+Name: Angelica Dinh
+Date: July 20, 2013
+Assignment: Functions Activity
+Class: FFM-1
+*/
+
+
+package
+{
+	import flash.display.Sprite;
+	
+	public class Main extends Sprite
+	{
+		public function Main()
+		{
+			/*
+			trace("hello world");
+			trace("how are you doing");
+			trace("hey there!"); 
+			//when doing our code and doing something more then once, its easier to do the code with Functions then do the code over and over again.
+			*/
+		}
+		
+		//function body or function definition
+		//function must be below the constructor function (public function Main())
+		private function myFirstFuncion():void//never put a function inside another function. Instead stack the functions. 
+		}	
+			trace("hello world");
+			trace("how are you doing");
+			trace("hey there!"); 
+		}	
+	}		
+}			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	

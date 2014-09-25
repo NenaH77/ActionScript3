@@ -1,0 +1,63 @@
+/*
+Name: Angelica Dinh
+Date: July 21, 2013
+Assignment: Functions Assignment
+Class: FFM-1
+*/
+
+
+package
+{
+	import flash.display.Sprite;
+	
+	public class Main extends Sprite
+	{
+		public function Main()
+		{
+			//Circumference
+			var two:uint = 2;
+			const PI:Number = 3.14159265;
+			var radius:uint = 4;
+			
+			var circumference:Number = circumfCircle(two, PI, radius);//circumference represents (twoPie, PI, radius)
+			trace("The circumference of the circle is " + circumference);				
+		}
+		private function circumfCircle(t:uint, PI:Number, r:uint):Number //circumfCircle represents the variables and their uint/Numbers
+				//if u don't know something is going to b returned, set as void otherwise set ur rtn type as the info u r returning.
+		{
+			var circ:Number = t * PI * r;//ex. 2 * 3.14 * 4 = 25.12
+			return circ;//need to return so that information goes out
+		}
+	
+		//Rounding
+		public function RoundNumbers()
+		{
+			var originalNumber:Number = 1.5473947;
+			var rounded:uint = 2;
+			var rnd:uint = 2;
+			
+			trace("The original number was " +originalNumber+ " Rounded to " +rounded+ " digits, the number is " +round(originalNumber, rnd));
+		}
+	
+		private function round(n:Number, precision:uint):Number//using perameters to get info that is passed to them
+		{
+			var decimalPlaces:Number = Math.pow(100, precision);//10,000 changes the decimal place of my number
+			return Math.round(decimalPlaces * n) / decimalPlaces;//Math.round (10,000 * 1.5473947)/1.5473947. Must return answer to the problem 
+		}
+		
+		//How bout them apples
+		public function Apps()
+		{
+			var fruit:Array=["apples", "oranges", "banana", "peach", "apples", "orange", "watermelon"];
+			var fruitName: String = "apple";
+			
+			var getAppleCount:Number = countNumApple = fruitName);//trying to figure out how to get the array to equal apple???
+			trace("I have " + getAppleCount + fruitName);  
+		}	
+		private function countNumApple(fruit:Array, fruitName:String):Number//Searches for an item in an array//f= fruit
+		{
+			var searchForApple:Number = fruit.indexOf("apple")
+				return searchForApple;//return value back to the function apps
+		}
+	}
+}

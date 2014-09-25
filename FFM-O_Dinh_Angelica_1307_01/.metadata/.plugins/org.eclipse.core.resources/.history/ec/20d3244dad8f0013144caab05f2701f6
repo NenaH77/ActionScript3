@@ -1,0 +1,19 @@
+package {
+	import flash.display.Sprite;
+	
+	public class Main extends Sprite {
+		public function Main() { //constructor function
+			
+			var dog:String = "Aussie";
+			var pig:String = "Potbelly";
+			
+			var Names:String = PetName(dog, pig);
+			
+		}
+		private function PetName(d:String, p:String):String {
+			var NameOfPets:String = "Ozark, Piggy";
+			return NameOfPets;
+			
+		}
+	}
+}

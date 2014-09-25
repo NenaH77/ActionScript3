@@ -1,0 +1,23 @@
+package
+{
+	import flash.display.Sprite;
+	import flash.text.TextField;
+	
+	public class Restrict extends Sprite
+	{
+		public function Restrict()
+		{
+			var field:TextField = new TextField();
+			this.addChild(field);
+			field.border = true;
+			field.x = 200;
+			field.y = 100;
+			field.text = "Hello World";
+			field.appendText("!!!");
+			field.restrict = "A-Z";
+			field.maxChars = 5;
+			field.appendText("hola");
+			
+		}
+	}
+}

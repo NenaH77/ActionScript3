@@ -1,0 +1,15 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Main extends Sprite
+	{
+		public function Main()
+		{
+			var button:MyButton = new MyButton();
+			this.addChild(button);
+			button.x = 200;
+			button.y = 100;
+		}
+	}
+}

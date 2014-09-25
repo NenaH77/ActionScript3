@@ -1,0 +1,87 @@
+/*
+Name: Angelica Dinh
+Date: July 29, 2013
+Assignment: Input vs Dynamic Fields
+Class: FFM-1
+*/
+package
+{
+	import flash.display.Sprite;
+	import flash.text.TextField;
+	import flash.text.TextFieldType;
+	import flash.text.TextFormat;
+	
+	public class InputDynamicTextFields extends Sprite
+	{
+		public function InputDynamicTextFields()
+		{
+			var label:TextField = new TextField();
+			this.addChild(label);
+			//label.border = true;
+			label.x = 100;
+			label.y = 100;
+			label.width = 80;
+			label.height = 30;
+			label.text = "First Name:";
+			label.selectable = false;//making first name non-selectable. in other words, can't hightlight text			
+			
+			
+			//formating input fields
+			var format:TextFormat = new TextFormat();
+			format.color = 0x008000;
+			format.font = "Arial";
+			format.size = 24;
+			
+
+			var nameInput:TextField = new TextField;
+			this.addChild(nameInput);
+			nameInput.border = true;
+			nameInput.y = label.y;
+			nameInput.x = 200;
+			nameInput.width = 80;
+			nameInput.height = 30;
+			
+			//Notice you can't type anything in the 2nd text field. You need to change the type of the text field
+			nameInput.type = TextFieldType.INPUT; //this is not a 'top level' class so we need to import in package 'import flash.text.TextFieldType;'
+			
+			//Notice once you import flash.text.TextFieldType into the package section you can now type into the textfield
+
+			//nameInput.setTextFormat(format);//only works after text in the text field
+			//therefore for input text fields..its almost always better to use the DefualtTextFormat property
+			nameInput.defaultTextFormat = format;
+			
+			
+			//instead of FirstName you now want to have YearofBirth and.. 
+			//limit the characters entered
+			var label:TextField = new TextField();
+			this.addChild(label);
+			label.border = true;
+			label.x = 100;
+			label.y = 200;
+			label.width = 80;
+			label.height = 30;
+			label.text = "Year of Birth:";
+			label.selectable = false;
+			
+			
+			var name1Input:TextField = new TextField;
+			this.addChild(name1Input);
+			name1Input.border = true;
+			name1Input.y = label.y;
+			name1Input.x = 100;
+			name1Input.width = 80;
+			name1Input.height = 30;
+			
+			
+			
+			//limits number of characters
+			name1Input.maxChars = 4;
+			
+			//the restrict
+			//type in the allowed characters, a-z A-Z 0-9. , 
+			name1Input.restrict = "0-9";
+			
+			
+		}
+	}
+}

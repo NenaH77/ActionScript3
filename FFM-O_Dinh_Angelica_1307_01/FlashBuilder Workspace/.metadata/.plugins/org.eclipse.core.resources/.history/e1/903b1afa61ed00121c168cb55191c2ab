@@ -1,0 +1,12 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Dinh_Angelica_Conditionals extends Sprite
+	{
+		public function Dinh_Angelica_Conditionals()
+		{
+			
+		}
+	}
+}

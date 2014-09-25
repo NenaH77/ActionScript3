@@ -1,0 +1,18 @@
+/*
+Name: Angelica Dinh
+Date: July 30, 2013
+Assignment: Fields with Events Part 1
+Class: FFM-1
+*/
+package
+{
+	import flash.display.Sprite;
+	
+	public class Main extends Sprite
+	{
+		public function Main()
+		{
+			
+		}
+	}
+}
